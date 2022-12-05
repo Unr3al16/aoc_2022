@@ -1,5 +1,6 @@
 import day01.Day01
 import day02.Day02
+import day03.Day03
 
 fun main(args: Array<String>) {
     println("---------------------------------------------")
@@ -11,4 +12,6 @@ fun main(args: Array<String>) {
     val d2 = Day02()
     d2.getResultsForRockScissorPaper()
     println("---------------------------------------------")
+    val d3 = Day03()
+    d3.printBackPackPackingResult()
 }
