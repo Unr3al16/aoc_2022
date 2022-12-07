@@ -1,4 +1,4 @@
-package day02
+package Day02
 
 import utils.Loader
 
@@ -15,8 +15,8 @@ class Day02() {
     private fun play(): Map<String,Int> {
         val listOfData: List<String> = Loader.readFileAsLinesUsingReadLines("src/main/resources/data_aoc_02.txt")
         val pointsOfGame = mutableMapOf<String, Int>()
-        var firstRound:Int = 0
-        var secondRound:Int = 0
+        var firstRound = 0
+        var secondRound = 0
         listOfData.forEach() { line ->
             val challenge: List<Int> = line.split(" ").map { splitString -> reinterpreteCharacter(splitString) }
             firstRound += rockScissorPaper(challenge)

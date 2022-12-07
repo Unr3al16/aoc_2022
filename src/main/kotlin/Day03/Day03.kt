@@ -1,7 +1,6 @@
-package day03
+package Day03
 
 import utils.Loader
-import java.util.ListResourceBundle
 
 class Day03 {
 
@@ -41,7 +40,7 @@ class Day03 {
     }
 
     private fun findWrongItemInGroupedBackpacks(backpackList: List<String>):Int {
-        var duplicated_points:Int = 0
+        var duplicated_points = 0
         for (i in 0 .. backpackList.size - 3 step 3) {
             val packs:List<String> = backpackList.subList(i, i+3)
             val duplicates: List<Char> = packs[0].toList().intersect(packs[1].toList()).toList().intersect(packs[2].toList()).toList()

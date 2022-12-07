@@ -1,4 +1,4 @@
-package day01
+package Day01
 
 import utils.Loader
 
@@ -10,8 +10,8 @@ class Day01() {
     }
 
     private fun calculateCalories():List<Int>{
-        var content  = Loader.readFileAsLinesUsingReadLines("src/main/resources/data_aoc_01.txt")
-        var sums:ArrayList<Int> = ArrayList()
+        val content  = Loader.readFileAsLinesUsingReadLines("src/main/resources/data_aoc_01.txt")
+        val sums:ArrayList<Int> = ArrayList()
         var sum = 0
         content.forEach{
             if (it == "")
@@ -22,7 +22,7 @@ class Day01() {
             else{
                 sum += it.toInt()
             }
-        };
+        }
         return sums
     }
 
