@@ -4,6 +4,7 @@ import Day01.Day01
 import Day02.Day02
 import Day03.Day03
 import Day06.Day06
+import Day08.Day08
 import Day10.Day10
 
 fun main() {
@@ -31,6 +32,10 @@ fun main() {
     println("Day 6\n")
     val d6 = Day06()
     d6.startSignalProcessing()
+    println("---------------------------------------------")
+    println("Day 8\n")
+    val d08 = Day08()
+    d08.analyseTreeMap()
     println("---------------------------------------------")
     println("Day 10\n")
     val d10 = Day10()
